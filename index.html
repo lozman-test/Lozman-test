@@ -97,6 +97,16 @@ textarea { min-height:84px; resize:vertical; }
 details summary { cursor:pointer; font-weight:700; color:var(--lagon-deep); padding:6px 0; }
 .toast { position:fixed; left:50%; bottom:20px; transform:translateX(-50%); background:var(--ink); color:#fff; padding:10px 18px; border-radius:999px; font-weight:600; z-index:20; max-width:calc(100% - 32px); text-align:center; }
 .empty { text-align:center; color:var(--muted); padding:8px; }
+.hero { display:flex; flex-direction:column; gap:14px; padding:12px 2px 4px; }
+.hero h1 { font-size:1.9rem; color:var(--lagon-deep); }
+.hero p { font-size:1.05rem; }
+.kicker { font-size:.78rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--lagon); }
+.duo { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+@media (max-width:640px) { .duo { grid-template-columns:1fr; } }
+.steps { margin:0; padding-left:20px; display:flex; flex-direction:column; gap:8px; }
+.principles { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:14px; }
+.principles li { display:flex; gap:12px; align-items:flex-start; } .principles li > span { font-size:1.4rem; line-height:1; }
+.btn.ghost.big { align-self:auto; }
 code { background:var(--sable); padding:1px 5px; border-radius:6px; }
 </style>
 </head>
@@ -109,7 +119,7 @@ code { background:var(--sable); padding:1px 5px; border-radius:6px; }
   <div class="banner">Bêta privée · ne dépose aucune pièce justificative ni coordonnée bancaire</div>
 </header>
 <main id="app"><div class="card"><p class="empty">Chargement de Lozman…</p></div></main>
-<script src="config.js?v=3"></script>
-<script type="module" src="app.js?v=3"></script>
+<script src="config.js?v=4"></script>
+<script type="module" src="app.js?v=4"></script>
 </body>
 </html>
